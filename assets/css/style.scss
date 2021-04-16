@@ -727,7 +727,17 @@ footer {
 	padding: 175px 0 0px;
 	background: $black;
 	position: relative;
-
+	&:before {
+		z-index: 2;
+		content: " ";
+		background: rgb(50, 57, 74);
+		background: linear-gradient(0deg, #1c2437 15%, transparent 100%);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 300px;
+	}
 	&:after {
 		content: " ";
 		background: url("../uploads/shape2.png") no-repeat;
@@ -739,6 +749,7 @@ footer {
 		display: block;
 		background-size: cover;
 		position: absolute;
+		z-index: 1;
 		transform: translate(0, 98%);
 	}
 	@include xl {

@@ -284,7 +284,9 @@ footer a:hover { color: #32c8de; }
 
 .security-hero { padding: 175px 0 0px; background: #1c2437; position: relative; }
 
-.security-hero:after { content: " "; background: url("../uploads/shape2.png") no-repeat; width: 100vw; left: 0; right: 0; height: 8.5vw; bottom: 0; display: block; background-size: cover; position: absolute; -webkit-transform: translate(0, 98%); transform: translate(0, 98%); }
+.security-hero:before { z-index: 2; content: " "; background: #32394a; background: -webkit-gradient(linear, left bottom, left top, color-stop(15%, #1c2437), to(transparent)); background: linear-gradient(0deg, #1c2437 15%, transparent 100%); position: absolute; bottom: 0; left: 0; right: 0; height: 300px; }
+
+.security-hero:after { content: " "; background: url("../uploads/shape2.png") no-repeat; width: 100vw; left: 0; right: 0; height: 8.5vw; bottom: 0; display: block; background-size: cover; position: absolute; z-index: 1; -webkit-transform: translate(0, 98%); transform: translate(0, 98%); }
 
 @media (min-width: 1400px) and (max-width: 1660px) { .security-hero { padding: 120px 0 0px; } }
 

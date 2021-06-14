@@ -20,37 +20,53 @@ $(function () {
 		$(this).toggleClass("active");
 		$("nav").toggleClass("active");
 	});
-	$(".sec-what-is-insurance .owl-carousel").owlCarousel({
-		loop: true,
-		margin: 10,
-		items: 1,
-		dots: true,
-		autoplay: true,
-		autoplayTimeout: 4000,
-		autoplaySpeed: 1000,
-		dotsSpeed: 1000,
-		responsive: {
-			0: {
-				items: 1,
+	$("header nav ul li a").click(function (e) {
+		// if ($(this).data("scroll")) {
+		// e.preventDefault();
+		$("body,html").animate(
+			{
+				scrollTop: $($(this).attr("href")).offset().top,
 			},
-			768: {
-				items: 2,
-				margin: 40,
-			},
-			1200: {
-				items: 1,
-			},
-		},
+			1000
+		);
+		// }
 	});
-	$(".feedback .owl-carousel").owlCarousel({
-		loop: true,
-		margin: 10,
-		items: 1,
-		dots: false,
-		nav: true,
-		autoplay: true,
-		autoplayTimeout: 4000,
-		autoplaySpeed: 1000,
-		navSpeed: 1000,
-	});
+	if ($(".sec-what-is-insurance .owl-carousel").length > 0) {
+		$(".sec-what-is-insurance .owl-carousel").owlCarousel({
+			loop: true,
+			margin: 10,
+			autoplayHoverPause: true,
+			items: 1,
+			dots: true,
+			autoplay: true,
+			autoplayTimeout: 4000,
+			autoplaySpeed: 1000,
+			dotsSpeed: 1000,
+			responsive: {
+				0: {
+					items: 1,
+				},
+				768: {
+					items: 2,
+					margin: 40,
+				},
+				1200: {
+					items: 1,
+				},
+			},
+		});
+	}
+	if ($(".feedback .owl-carousel").length > 0) {
+		$(".feedback .owl-carousel").owlCarousel({
+			loop: true,
+			margin: 10,
+			items: 1,
+			dots: false,
+			nav: true,
+			autoplay: true,
+			autoplayTimeout: 4000,
+			autoplaySpeed: 1000,
+			navSpeed: 1000,
+		});
+	}
 });

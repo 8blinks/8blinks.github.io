@@ -724,8 +724,9 @@ footer {
 }
 
 .security-hero {
-	padding: 175px 0 0px;
+	padding: 175px 0 175px;
 	background: $black;
+	border-bottom: 6px solid $blue;
 	position: relative;
 	&:before {
 		z-index: 2;
@@ -739,27 +740,27 @@ footer {
 		height: 300px;
 	}
 	&:after {
-		content: " ";
-		background: url("../uploads/shape2.png") no-repeat;
-		width: 100vw;
-		left: 0;
-		right: 0;
-		height: 8.5vw;
-		bottom: 0;
-		display: block;
-		background-size: cover;
-		position: absolute;
-		z-index: 1;
-		transform: translate(0, 98%);
+		// content: " ";
+		// background: url("../uploads/shape2.png") no-repeat;
+		// width: 100vw;
+		// left: 0;
+		// right: 0;
+		// height: 8.5vw;
+		// bottom: 0;
+		// display: block;
+		// background-size: cover;
+		// position: absolute;
+		// z-index: 1;
+		// transform: translate(0, 98%);
 	}
 	@include xl {
-		padding: 120px 0 0px;
+		padding: 120px 0 120px;
 	}
 	@include lg {
-		padding: 100px 0 30px;
+		padding: 100px 0 100px;
 	}
 	@include tablet {
-		padding: 90px 0 50px;
+		padding: 90px 0 90px;
 	}
 	@include mobile {
 		padding: 100px 0 100px;
@@ -864,12 +865,12 @@ footer {
 }
 
 .sec-partners {
-	padding: 15vw 0 100px;
+	padding: 200px 0 300px;
 	@include tablet {
-		padding: 15vw 0 50px;
+		padding: 100px 0 200px;
 	}
 	@include mobile {
-		padding: 80px 0 50px;
+		padding: 80px 0 150px;
 	}
 	h2 {
 		font-weight: bold;
@@ -878,12 +879,12 @@ footer {
 		text-align: center;
 		color: #32c8de;
 		@include xl {
-			font-size: 36px;
-			line-height: 52px;
+			font-size: 46px;
+			line-height: 60px;
 		}
 		@include lg {
-			font-size: 32px;
-			line-height: 48px;
+			font-size: 42px;
+			line-height: 56px;
 		}
 		@include mobile {
 			font-size: 32px;
@@ -898,10 +899,10 @@ footer {
 		text-align: center;
 		color: #717171;
 		@include xl {
-			font-size: 22px;
+			font-size: 30px;
 		}
 		@include lg {
-			font-size: 20px;
+			font-size: 26px;
 		}
 		@include mobile {
 			font-size: 20px;
@@ -1411,10 +1412,10 @@ footer {
 	background: #494f5f;
 	padding: 145px 0;
 	@include xl {
-		padding: 100px 0;
+		padding: 200px 0;
 	}
 	@include lg {
-		padding: 100px 0;
+		padding: 200px 0;
 	}
 	@include mobile {
 		padding: 80px 0;
@@ -1465,6 +1466,7 @@ footer {
 			text-align: left;
 			color: $blue;
 			box-shadow: none !important;
+			align-items: flex-start;
 			@include mobile {
 				font-size: 20px;
 				line-height: 36px;
@@ -1473,6 +1475,8 @@ footer {
 				color: #fff;
 			}
 			&:after {
+				position: relative;
+				top: 11px;
 				background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ0OCA0NDgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTI3MiAxODRjLTQuNDE3OTY5IDAtOC0zLjU4MjAzMS04LTh2LTE3NmgtODB2MTc2YzAgNC40MTc5NjktMy41ODIwMzEgOC04IDhoLTE3NnY4MGgxNzZjNC40MTc5NjkgMCA4IDMuNTgyMDMxIDggOHYxNzZoODB2LTE3NmMwLTQuNDE3OTY5IDMuNTgyMDMxLTggOC04aDE3NnYtODB6bTAgMCIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjwvZz48L3N2Zz4=);
 			}
 			&:not(.collapsed)::after {

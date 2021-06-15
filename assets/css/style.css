@@ -618,11 +618,11 @@ footer a:hover { color: #32c8de; }
 
 @media (max-width: 767px) { .feedback .item .avatar { margin: 30px auto 20px; width: 100px; height: 100px; } }
 
-.feedback .item .stars { margin: 0 auto 35px; width: 140px; }
+.feedback .item .stars { margin: 0 auto 35px; width: 140px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 @media (max-width: 767px) { .feedback .item .stars { width: 100px; margin: 0 auto 20px; } }
 
-.feedback .item .stars img { width: 100%; }
+.feedback .item .stars img { width: 24px; height: 24px; }
 
 .feedback .item .quote { font-weight: normal; font-size: 22px; line-height: 40px; text-align: center; color: #717171; width: 70%; margin: auto; }
 

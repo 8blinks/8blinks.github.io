@@ -39,7 +39,7 @@ $(function () {
 			items: 1,
 			dots: true,
 			autoplay: true,
-			autoplayTimeout: 4000,
+			autoplayTimeout: 5000,
 			autoplaySpeed: 1000,
 			dotsSpeed: 1000,
 			responsive: {
@@ -64,9 +64,9 @@ $(function () {
 			dots: false,
 			nav: true,
 			autoplay: true,
-			autoplayTimeout: 4000,
-			autoplaySpeed: 1000,
-			navSpeed: 1000,
+			autoplayTimeout: 8000,
+			autoplaySpeed: 2000,
+			navSpeed: 2000,
 		});
 	}
 });
